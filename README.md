@@ -22,9 +22,11 @@ initCobraToolbox
 ## Data preparation:
 **Necessary:**<br>
 Your should first prepare your input files, example is as follows:  
-1, the genome-scale metabolic model of given species, i.e. [**bacillus_iYO844**](bacillus/iYO844.mat)  
-2, the elementary enviroment-cell exchange reactions, i.e. [**bacillus_iUO844_exchanges**](bacillus/general_IO_bacillus.txt)  
-3, the nutrient uptake reactions, i.e. [**bacillus_iUO844_nutrient**](bacillus/nutrient_bacillus.txt)  
+1, the genome-scale metabolic model of given species, i.e. [**bacillus_iYO844**](bacillus/iYO844.mat)
+2, the cofactor metabolites, i.e. [**bacillus_iUO844_cofactors**](bacillus/cofactor.txt)
+3, the elementary enviroment-cell exchange reactions, i.e. [**bacillus_iUO844_exchanges**](bacillus/general_IO_bacillus.txt)
+4, the secreted reactions, i.e. [**bacillus_iUO844_secretion**](bacillus/secrated_bacillus.txt)  
+5, the nutrient uptake reactions, i.e. [**bacillus_iUO844_nutrient**](bacillus/nutrient_bacillus.txt)  
 
 **Optional:**<br>
 1, experimental 13C measured reaction fluxes for model validation, i.e. [**bacillus_iUO844_13C_flux**](bacillus/intracellularflux_bacillus.txt)  

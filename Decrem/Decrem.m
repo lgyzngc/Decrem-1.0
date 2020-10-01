@@ -1,5 +1,5 @@
 %% read model and cofactor
-load('.\bacillus\iYO844.mat','-mat');
+load('..\bacillus\iYO844.mat','-mat');
 Ecoli_Model = iYO844;
 
 % Ecoli_Model.lb=Ecoli_Model.lb/10000;
@@ -17,7 +17,7 @@ for i=1:length(Ecoli_Model.lb)
     end
 end
 cofactor_hash_temp = java.util.Hashtable;
-cofactor_file=fopen('cofactor.txt');
+cofactor_file=fopen('..\bacillus\cofactor.txt');
 while(~feof(cofactor_file))
     cofactor_hash_temp.put(fgetl(cofactor_file),1);
 end
@@ -36,11 +36,20 @@ exchange_reaction_index=[];
 input_nutrient={};
 index=1;
 
-secrated_metabolite_set={'SUCCt2r','CITt2r'};
+#secrated_metabolite_set={'SUCCt2r','CITt2r'};
+secrated_nutrient_file=fopen('..\bacillus\secrated_bacillus.txt');
+secrated_metabolite_set={};
+	while(~feof(secrated_nutrient_file))
+		line=fgetl(secrated_nutrient_file);
+		if(~isempty(line))
+			secrated_metabolite_set{index}=line;
+			index=index+1;
+		end
+	end
 % secrated_metabolite_positive={'ACt2r'};
 % secrated_metabolite_set={};
 secrated_metabolite_positive={};
-input_nutrient_file=fopen('.\bacillus\nutrient_bacillus.txt');
+input_nutrient_file=fopen('..\bacillus\nutrient_bacillus.txt');
 while(~feof(input_nutrient_file))
     line=fgetl(input_nutrient_file);
     if(~isempty(line))
@@ -50,7 +59,7 @@ while(~feof(input_nutrient_file))
 end
 input_output_nutrient={};
 index=1;
-input_nutrient_file=fopen('.\bacillus\general_IO_bacillus.txt');
+input_nutrient_file=fopen('..\bacillus\general_IO_bacillus.txt');
 while(~feof(input_nutrient_file))
     line=fgetl(input_nutrient_file);
     if(~isempty(line))

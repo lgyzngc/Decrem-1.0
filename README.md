@@ -39,18 +39,19 @@ Your should first prepare your input files, example is as follows:
 for bacillus iYO844 model, or using command line:  
 ```Bash
  reconstructed_model = decoupledModelConstruct(model,cofactor_path,secrated_path,nutrient_path,general_IO_path)
- 	%model: metabolic models with mat format
-	%cofactor_path: the file path of cofactors
-	%secrated_path: the file path of secrated reactions
-	%nutrient_path: the file path of nutrient reactions
-	%general_IO_path: the file path of general IO reactions
+ %%model: metabolic models with mat format
+ %%cofactor_path: the file path of cofactors
+ %%secrated_path: the file path of secrated reactions
+ %%nutrient_path: the file path of nutrient reactions
+ %%general_IO_path: the file path of general IO reactions
 ```
+for usr self-defined data
 
 2, predict metabolic fluxes or growth rate using command line:  
 ```Bash
  Decrem
-```
-for bacillus iYO844 model, or replace all the data in bacillus filefold with usr data  
+``` 
+for bacillus iYO844 model, or replace all the data in bacillus filefold with usr self-defined data  
 
 ### Reference
-**Improved phenotypic predictions of metabolic models by integrating regulatory constraints**<br>
+**Gaoyang Li et. al. Improved phenotypic predictions of metabolic models by integrating regulatory constraints,BioRxiv,2020**<br>

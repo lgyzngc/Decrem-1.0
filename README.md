@@ -47,13 +47,17 @@ for bacillus iYO844 model, or using command line:
  %%nutrient_path: the file path of nutrient reactions
  %%general_IO_path: the file path of general IO reactions
 ```
-for usr self-defined data
+for user self-defined data
 
 2, predict metabolic fluxes or growth rate using command line:  
 ```Bash
  Decrem
 ``` 
-for bacillus iYO844 model, or replace all the data in bacillus filefold with usr self-defined data  
+for bacillus iYO844 model, or replace all the data in [**bacillus**](bacillus) filefold with user self-defined data  
+
+
+## pre-trained models:
+three reconstructed decoupled metabolic models for Escherichia coli, Saccharomyces cerevisiae and Bacillus subtilis are located in the filefold of [**three reconstructed models**](three reconstructed models)  
 
 ### Reference
 **Gaoyang Li et. al. Improved phenotypic predictions of metabolic models by integrating regulatory constraints,BioRxiv,2020**<br>

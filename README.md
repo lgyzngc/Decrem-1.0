@@ -58,7 +58,7 @@ for bacillus iYO844 model, or replace all the data in [**bacillus**](bacillus) f
 
 ## pre-trained models:
 three reconstructed decoupled metabolic models for Escherichia coli, Saccharomyces cerevisiae and Bacillus subtilis are located in the filefold of 
-[**three\ reconstructed\ models**](three reconstructed models)  
+[**three reconstructed models**](three\ reconstructed\ models)  
 
 ### Reference
 **Gaoyang Li et. al. Improved phenotypic predictions of metabolic models by integrating regulatory constraints,BioRxiv,2020**<br>

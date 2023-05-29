@@ -23,25 +23,15 @@ You should first prepare your input files, example is as follows:
 
 ## User tutorial:
 1, bulid the topologically-decoupled metabolic model  
+1, directly running the Decrem_Demo.m for bacillus iYO844 model test or modifing the default input files as user self-defined data.
 ```Bash
- test_reconstruction
+ Decrem_Demo
 ```
-for bacillus iYO844 model, or using command line:  
+2, bulid the topologically-decoupled metabolic model and predict metabolic fluxes or growth rate using command line:  
 ```Bash
- reconstructed_model = decoupledModelConstruct(model,cofactor_path,secrated_path,nutrient_path,general_IO_path)
- %%model: metabolic models with mat format
- %%cofactor_path: the file path of cofactors
- %%secrated_path: the file path of secrated reactions
- %%nutrient_path: the file path of nutrient reactions
- %%general_IO_path: the file path of general IO reactions
-```
-for user self-defined data
-
-2, predict metabolic fluxes or growth rate using command line:  
-```Bash
- Decrem
+ [Decrem_solution,Decrem_model,CBM_model] = Decrem(CBM_Model,cofactors,input_nutrient,secretion,general_IO,cluster_num,extraflux(:,[1,i]),intraflux(:,[1,i]),knockout_genes);
 ``` 
-for bacillus iYO844 model, or replace all the data in [**bacillus**](bacillus) filefold with user self-defined data  
+for given CBM_model model,e.g. bacillus iYO844 model or replace all the data in [**bacillus**](bacillus) filefold with user self-defined data  
 
 
 ## pre-trained models:

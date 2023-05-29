@@ -9,7 +9,7 @@ initCobraToolbox
 
 ## Data preparation:
 **Necessary:**<br>
-Your should first prepare your input files, example is as follows:  
+You should first prepare your input files, example is as follows:  
 1, the genome-scale metabolic model of given species, e.g. [**bacillus_iYO844**](bacillus/iYO844.mat)  
 2, the cofactor metabolites, e.g. [**bacillus_iUO844_cofactors**](bacillus/cofactor.txt)  
 3, the elementary enviroment-cell exchange reactions, e.g. [**bacillus_iUO844_exchanges**](bacillus/general_IO_bacillus.txt)  
@@ -17,9 +17,9 @@ Your should first prepare your input files, example is as follows:
 5, the nutrient uptake reactions, e.g. [**bacillus_iUO844_nutrient**](bacillus/nutrient_bacillus.txt)  
 
 **Optional:**<br>
-1, experimental 13C measured reaction fluxes for model validation, e.g. [**bacillus_iUO844_13C_flux**](bacillus/intracellularflux_bacillus.txt)  
-2, simple cycle-derived reaction similarity metrix, e.g. [**bacillus_iUO844_similarity**](bacillus/similarity_matrix_5len_rec4.txt)  
-
+1, experimental 13C measured reaction fluxes for model validation, e.g. [**bacillus_iUO844_13C_flux**](bacillus/intracellularflux_bacillus.txt) 
+2, experimental extracellular uptake/secrete rate, e.g. the carbon uptake, O2 rate, CO2 rate, actate or ethonal secretion et.al. which has a same file format with the 13C flux file.
+3, the gene knockout list, each row should only store one knockout gene.
 
 ## User tutorial:
 1, bulid the topologically-decoupled metabolic model  

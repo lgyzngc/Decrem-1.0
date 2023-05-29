@@ -1,23 +1,11 @@
 # Decrem - topologically decoupled metabolic network model
 ## Installation:
-1, install the [**COBRA2.0**](https://opencobra.github.io/cobratoolbox/stable/) toolbaox from palsson lab.
-2, initializing the COBRA tools using command line:
+1, install the [**COBRA2.0**](https://opencobra.github.io/cobratoolbox/stable/) toolbaox from palsson lab, and initializing the COBRA tools using command line:
 ```Bash
 initCobraToolbox
 ```
-3, add java package of [**jartest**](jartest) into matlab for simple directed cycle identification using the command:   
-```Bash
- javaclasspath
-.\jartest\lib\jgraph-5.13.0.0.jar                                                   
-.\jartest\lib\jgrapht-core-0.9.0.jar                                                
-.\jartest\lib\jgrapht-demo-0.9.0.jar                                                
-.\jartest\lib\jgrapht-ext-0.9.0.jar                                                 
-.\jartest\lib\jgrapht-ext-0.9.0-uber.jar                                            
-.\jartest\lib\jgraphx-2.0.0.1.jar  
-.\jartest\simplecyclesofklength.jar 
-```
-4, install the matlab toolbox [**SpectraLib_A**](SpectraLib\_A) for clustering analysis;  
-5, install the matlab toolbox [**Fast_SNP**](Fast\_SNP) for solving sparse basis vectors;  
+2, install the matlab toolbox [**SpectraLib_A**](SpectraLib\_A) for clustering analysis;  
+3, install the matlab toolbox [**Fast_SNP**](Fast\_SNP) for solving sparse basis vectors;  
 
 ## Data preparation:
 **Necessary:**<br>

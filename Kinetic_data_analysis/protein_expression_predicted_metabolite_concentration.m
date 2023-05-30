@@ -1,5 +1,5 @@
 %% loading data
-File_geneExpession = fopen('.\kinetic_data\PEMC_geneExpression.txt');
+File_geneExpession = fopen('.\PEMC_geneExpression.txt');
 geneExpession = [];
 strainName = {};
 geneName={};
@@ -23,7 +23,7 @@ while(~feof(File_geneExpession))
 end
 fclose(File_geneExpession);
 
-File_metaboliteExpession = fopen('.\kinetic_data\\PEMC_metaboliteConcentration.txt');
+File_metaboliteExpession = fopen('.\PEMC_metaboliteConcentration.txt');
 metaboliteExpession = [];
 metaboliteName={};
 index=0;
@@ -44,7 +44,7 @@ while(~feof(File_metaboliteExpession))
 end
 fclose(File_metaboliteExpession);
 
-File_metabolicFlux = fopen('.\kinetic_data\PEMC_metabolicFlux.txt');
+File_metabolicFlux = fopen('.\PEMC_metabolicFlux.txt');
 metabolicFlux = [];
 fluxName={};
 index=0;
@@ -67,7 +67,7 @@ fclose(File_metabolicFlux);
 metabolicFlux(1:49,:) = metabolicFlux(1:49,:).*(ones(49,1)*metabolicFlux(50,:));
 
 
-File_externalMetabolite = fopen('.\kinetic_data\PEMC_externalMetabolite.txt');
+File_externalMetabolite = fopen('.\PEMC_externalMetabolite.txt');
 externalMetabolite = [];
 externalMetaboliteName={};
 index=0;

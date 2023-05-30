@@ -35,7 +35,7 @@ for given CBM_model model,e.g. bacillus iYO844 model or replace all the data in 
 
 
 ## pre-trained models:
-three reconstructed decoupled metabolic models for Escherichia coli, Saccharomyces cerevisiae and Bacillus subtilis are located in the filefold of 
+three reconstructed decoupled metabolic models for Escherichia coli, Saccharomyces cerevisiae and Bacillus subtilis are found in the filefold of 
 [**three reconstructed models**](three\sreconstructed\smodels)  
 
 ### Reference

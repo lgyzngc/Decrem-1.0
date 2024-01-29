@@ -39,4 +39,4 @@ three reconstructed decoupled metabolic models for Escherichia coli, Saccharomyc
 [**three reconstructed models**](three\sreconstructed\smodels)  
 
 ### Reference
-**Gaoyang Li et. al. Improved phenotypic predictions of metabolic models by integrating regulatory constraints,BioRxiv,2020**<br>
+** Li, G., Liu, L., Du, W. et al. Local flux coordination and global gene expression regulation in metabolic modeling. Nat Commun 14, 5700 (2023). https://doi.org/10.1038/s41467-023-41392-6**<br>
